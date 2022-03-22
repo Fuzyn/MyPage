@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const [portfolio, setPortfolio] = useState(false)
   return (
-    <div className="App">
+    <div>
       {portfolio ? <Portfolio /> : <Hello setPortfolio={setPortfolio} />}
     </div>
   );

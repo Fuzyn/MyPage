@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 BODY {
   background-image: url(./assets/tlo_main.jpg);
   background-attachment: fixed;
@@ -173,6 +169,7 @@ BODY {
   font-size: 1vw;
   width: 30%;
   padding: 3%;
+  text-align: justify;
   transition: transform 1s;
 }
 
@@ -390,49 +387,6 @@ BODY {
   margin: 0 1vw;
 }
 
-.contact_field p {
-  position: absolute;
-  justify-self: center;
-  z-index: -1;
-  font-size: 3vw;
-  left: 44.2%;
-  top: -65%;
-}
-
-.contact input {
-  width: 20vw;
-  font-size: 1vw;
-  margin-bottom: 1vw;
-  padding: 0.3vw;
-}
-
-.contact button {
-  width: 10vw;
-  font-size: 1.5vw;
-  padding: 0.5vw;
-}
-
-/*                                                 Styles for Lost Page */
-
-.lostPage {
-  display: flex;
-  justify-content: center;
-}
-
-.lostPage_message {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  width: 35vw;
-  height: 40vh;
-  margin-top: 15vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 2vw;
-  padding: 2vw;
-}
-
 @media only screen and (max-width: 600px) {
   .hello-text {
     margin-bottom: 30%;
@@ -568,12 +522,6 @@ BODY {
     margin: auto;
     margin-bottom: 5vw;
     padding: 2vw 3vw;
-  }
-
-  .contact_field p {
-    font-size: 10vw;
-    left: 41%;
-    top: -15%;
   }
 
   .hobby-text {

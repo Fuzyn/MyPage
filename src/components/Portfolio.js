@@ -5,7 +5,6 @@ import fiImgPage from '../assets/firstproject.jpg';
 import imgQuiz from '../assets/quiz.jpg';
 import imgKanban from '../assets/kanban.jpg'
 import imgLetter from '../assets/letter.jpg'
-import imgThisPage from '../assets/thisPage.jpg'
 import videoPoster from '../assets/videoPoster.png';
 import videoSrc from '../assets/cv.mp4';
 
@@ -92,15 +91,6 @@ const Portfolio = () => {
                 <source src={videoSrc} type="video/mp4"></source>
             </video>
             <h1 data-aos="zoom-in" id='portfolio' className='examples-portfolio_title'>OK, now I invite you to see some of my works!</h1>
-
-            <div className="examples-main" data-aos="zoom-in">
-                <img className="examples-photo" src={imgThisPage} alt="my-first-page" />
-                <div className="examples-des">
-                    <h1>My website</h1>
-                    <h2>This is this website</h2>
-                </div>
-                <a className='git-button' href='https://github.com/Fuzyn/myPage'>Git Code</a>
-            </div>
             <div className="examples-main" data-aos="zoom-in">
                 <img className="examples-photo" src={fiImgPage} alt="my-first-page" />
                 <div className="examples-des">
@@ -137,8 +127,6 @@ const Portfolio = () => {
             <div className='contact'>
                 <h1>If you are interested what you see, please don't hesitate!</h1>
                 <div className='contact_field'>
-                    <h1>michalwierzbicki22@interia.eu</h1>
-                    <p>OR</p>
                     <h1>michalwierzbicki.miw@gmail.com</h1>
                 </div>
             </div>
