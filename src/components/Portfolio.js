@@ -19,6 +19,7 @@ const Portfolio = () => {
         duration: "1000",
         delay: "100",
         anchorPlacement: "bottom-center",
+        offset: 200,
     });
 
 
@@ -43,8 +44,8 @@ const Portfolio = () => {
         <div className="mainPort">
             <div>
                 <div className="photoDes">
-                    <img src={myPhoto} className="myPhoto" alt="myPhoto" data-aos="slide-right"/>
-                    <div className="description"  data-aos="slide-left">
+                    <img src={myPhoto} className="myPhoto" alt="myPhoto"/>
+                    <div className="description">
                         <a href='https://github.com/Fuzyn/MyPage' className='description-git'><img alt='git-logo' src={skillsImg[5]} /></a>
                         <h2>A few words, about me:</h2>
                         <p>I am a mining geologist by education and experience, I also have mining qualifications.</p>
@@ -149,7 +150,7 @@ const Portfolio = () => {
                 </div>
                 <a className='git-button' href='https://github.com/Fuzyn/FuzGamela'>Git Code</a>
             </div>
-            <div className='contact' data-aos="slide-up">
+            <div className='contact'>
                 <h1>If you are interested what you see, please don't hesitate!</h1>
                 <div className='contact_field'>
                     <h1><a href='mailto: michalwierzbicki.miw@gmail.com'>michalwierzbicki.miw@gmail.com</a></h1>
