@@ -4,8 +4,9 @@ import Gallery from './gallery';
 import { skillsImg, skillsDescription } from './skills';
 import fiImgPage from '../assets/firstproject.jpg';
 import imgQuiz from '../assets/quiz.jpg';
-import imgKanban from '../assets/kanban.jpg'
-import imgLetter from '../assets/letter.jpg'
+import imgKanban from '../assets/kanban.jpg';
+import imgLetter from '../assets/letter.jpg';
+import imgFuzgamela from '../assets/fuzgamela.jpg';
 import videoPoster from '../assets/videoPoster.png';
 import videoSrc from '../assets/cv.mp4';
 
@@ -17,8 +18,7 @@ const Portfolio = () => {
         easing: 'ease-out-back',
         duration: "1000",
         delay: "100",
-        anchorPlacement: "center-bottom",
-        // offset: "200"
+        anchorPlacement: "bottom-center",
     });
 
 
@@ -45,7 +45,7 @@ const Portfolio = () => {
                 <div className="photoDes">
                     <img src={myPhoto} className="myPhoto" alt="myPhoto" data-aos="slide-right"/>
                     <div className="description"  data-aos="slide-left">
-                        <a href='https://github.com/Fuzyn/MyPage' className='description-git'><img alt='git-logo' src={skillsImg[4]} /></a>
+                        <a href='https://github.com/Fuzyn/MyPage' className='description-git'><img alt='git-logo' src={skillsImg[5]} /></a>
                         <h2>A few words, about me:</h2>
                         <p>I am a mining geologist by education and experience, I also have mining qualifications.</p>
                         <hr />
@@ -138,6 +138,16 @@ const Portfolio = () => {
                     <h2>Game inspired by Wordle (English version) or Literalnie (Polish version). Guess the word without any hints in a maximum of 5 tries.</h2>
                 </div>
                 <a className='git-button' href='https://github.com/Fuzyn/Letter'>Git Code</a>
+            </div>
+            <div className="examples-main" data-aos="zoom-in-left">
+                <a href='https://fuzgamela-wierzbicki.netlify.app/'>
+                    <img src={imgFuzgamela} className="examples-photo" alt="kanban" />
+                </a>
+                <div className="examples-des">
+                    <h1>FuzGamela (not complete)</h1>
+                    <h2>Browser game</h2>
+                </div>
+                <a className='git-button' href='https://github.com/Fuzyn/FuzGamela'>Git Code</a>
             </div>
             <div className='contact' data-aos="slide-up">
                 <h1>If you are interested what you see, please don't hesitate!</h1>
