@@ -163,6 +163,8 @@ BODY {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  position: relative;
   background: radial-gradient(circle, rgba(6, 5, 26, 0.1) 0%, rgba(92, 20, 20, 0.5) 10%, rgba(6, 5, 26, 0.7) 100%);
   border-radius: 1vw;
   color: #fff;
@@ -170,11 +172,11 @@ BODY {
   width: 30%;
   padding: 3%;
   text-align: justify;
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 
 .description:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .description p:last-of-type {
@@ -187,15 +189,42 @@ BODY {
 }
 
 .description hr {
-  width: 80%;
+  width: 85%;
+  background-color: #fff;
+}
+
+.description-git {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  padding: 2% 2% 1% 2%;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 10%;
+  cursor: pointer;
+}
+
+.description-git:hover {
+  transform: scale(1.05);
+  transition-duration: 0.1s;
+}
+
+.description-git img {
+  width: 100%;
 }
 
 .desAnchor {
   display: flex;
   justify-content: center;
   font-size: 3vw;
+  width: 5%;
   color: #fff;
   text-decoration: none;
+}
+
+.desAnchor:hover {
+  transform: scale(1.1);
+  transition-duration: 0.1s;
 }
 
 .CV {
@@ -205,6 +234,11 @@ BODY {
   display: flex;
   align-content: flex-start;
   flex-direction: column;
+}
+
+.work,
+.education p {
+  text-align: justify;
 }
 
 .education>h1,
@@ -222,6 +256,39 @@ BODY {
 .ul-list {
   list-style-type: disc;
   padding-left: 2vw;
+}
+
+.skill-block {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5vw;
+  background: linear-gradient(0deg, rgba(34,40,195,0) 0%, rgba(15,20,150,1) 53%, rgb(0, 3, 82) 100%);
+  padding: 1% 0;
+  width: 8%;
+}
+
+.skill-container:hover {
+  transform: scale(1.1);
+  transition-duration: 0.2s;
+}
+
+.skill-container_div-img {
+  width: 50%;
+}
+
+.skill-container_img {
+  width: 100%;
+}
+
+.skill-container_div-p {
+  text-align: center;
+  font-size: 0.6vw;
 }
 
 .examples {
@@ -349,6 +416,7 @@ BODY {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .hobby_div:hover .hobby-des {
@@ -385,6 +453,11 @@ BODY {
   border-radius: 1vw;
   font-size: 2vw;
   margin: 0 1vw;
+}
+
+.contact_field a {
+  text-decoration: none;
+  color: #fff;
 }
 
 @media only screen and (max-width: 600px) {
@@ -432,11 +505,17 @@ BODY {
   .description {
     margin-top: 5%;
     width: 90%;
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 
   .description a {
     font-size: 5vw;
+  }
+
+  .description-git {
+    width: 8%;
+    bottom: 3%;
+    padding: 1% 1% 0 1%;
   }
 
   .CV h1 {
@@ -448,8 +527,26 @@ BODY {
   }
 
   .CV li {
-    font-size: 3vw;
+    font-size: 2vw;
     margin-top: 1%;
+  }
+
+  .CV p {
+    font-size: 2vw;
+  }
+
+  .skill-block {
+    flex-wrap: wrap;
+  }
+
+  .skill-container {
+    width: 20%;
+    margin: 0 5%;
+    padding: 2% 0;
+  }
+
+  .skill-container_div-p {
+    font-size: 2vw;
   }
 
   .hobby {
@@ -466,7 +563,7 @@ BODY {
   .hobby_div {
     display: flex;
     justify-content: center;
-    height: 18vh;
+    height: auto;
     width: 90%;
   }
 
