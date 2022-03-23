@@ -497,12 +497,12 @@ BODY {
   }
 
   .myPhoto {
-    width: 70%;
+    width: 76%;
   }
 
   .description {
     margin-top: 5%;
-    width: 90%;
+    width: 70%;
     font-size: 2.5vw;
   }
 
@@ -513,7 +513,7 @@ BODY {
   .description-git {
     width: 8%;
     bottom: 3%;
-    padding: 1% 1% 0 1%;
+    padding: 1% 2% 0 2%;
   }
 
   .CV h1 {
@@ -539,7 +539,7 @@ BODY {
 
   .skill-container {
     width: 20%;
-    margin: 0 5%;
+    margin: 1% 5%;
     padding: 2% 0;
   }
 
