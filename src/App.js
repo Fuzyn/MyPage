@@ -1,13 +1,19 @@
 import Hello from './components/Hello'
 import Portfolio from './components/Portfolio';
-import { useState } from 'react';
 import './App.css';
+import {useState} from "react";
 
 function App() {
-  const [portfolio, setPortfolio] = useState(false)
+  const [portfolio, setPortfolio] = useState(localStorage.getItem('showPortfolio'))
+
+  const showPortfolio = () => {
+    setPortfolio(true)
+    localStorage.setItem('showPortfolio', true)
+  }
+
   return (
     <div>
-      {portfolio ? <Portfolio /> : <Hello setPortfolio={setPortfolio} />}
+      {portfolio ? <Portfolio /> : <Hello showPortfolio={showPortfolio} />}
     </div>
   );
 }
