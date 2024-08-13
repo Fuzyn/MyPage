@@ -70,11 +70,13 @@ BODY {
 }
 
 .hiText-Hi {
+  font-size: 50px;
   text-shadow: 10px 10px #000;
 }
 
 .hiText-rest {
-  font-size: 18px;
+  font-size: 25px;
+  text-align: center;
 }
 
 .button_hello_div {
@@ -98,8 +100,8 @@ BODY {
 }
 
 .arrow {
-  height: 10%;
-  width: 1.5vw;
+  height: 30px;
+  width: 20px;
 }
 
 @keyframes arrow {
@@ -479,7 +481,6 @@ BODY {
 
   .hiText-rest {
     font-size: 3.5vw;
-    text-align: center;
   }
 
   .mainPort {
