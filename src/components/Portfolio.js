@@ -1,6 +1,6 @@
 import myPhoto from '../assets/myphoto.jpg';
 import AOS from 'aos';
-import Gallery from './gallery';
+import Gallery from './Gallery/Gallery';
 import { skillsImg, skillsDescription } from './skills';
 import fiImgPage from '../assets/firstproject.jpg';
 import imgQuiz from '../assets/quiz.jpg';
@@ -9,6 +9,8 @@ import imgLetter from '../assets/letter.jpg';
 import imgFuzgamela from '../assets/fuzgamela.jpg';
 import videoPoster from '../assets/videoPoster.png';
 import videoSrc from '../assets/cv.mp4';
+import Example from "./Example";
+import github from '../assets/skills/github.png';
 
 
 
@@ -46,7 +48,7 @@ const Portfolio = () => {
                 <div className="photoDes">
                     <img src={myPhoto} className="myPhoto" alt="myPhoto"/>
                     <div className="description">
-                        <a href='https://github.com/Fuzyn/MyPage' className='description-git'><img alt='git-logo' src={skillsImg[5]} /></a>
+                        <a href='https://github.com/Fuzyn/MyPage' className='description-git'><img alt='git-logo' src={github} /></a>
                         <h2>A few words, about me:</h2>
                         <p>I am a mining geologist by education and experience, I also have mining qualifications.</p>
                         <hr />
@@ -100,60 +102,50 @@ const Portfolio = () => {
                 <source src={videoSrc} type="video/mp4"></source>
             </video>
             <h1 data-aos="zoom-in-left" id='portfolio' className='examples-portfolio_title'>OK, now I invite you to see some of my works!</h1>
-            <div className="examples-main" data-aos="zoom-in-left">
-                <a href='https://firstpage-wierzbicki.netlify.app/'>
-                    <img className="examples-photo" src={fiImgPage} alt="my-first-page" />
-                </a>
-                <div className="examples-des">
-                    <h1>Simple website</h1>
-                    <h2>This is my first website, write in HTML and CSS</h2>
-                </div>
-                <a className='git-button' href='https://github.com/Fuzyn/FirstPage'>Git Code</a>
-            </div>
-            <div className="examples-main" data-aos="zoom-in-left">
-                <a href='https://quizapp-wierzbicki.netlify.app/'>
-                    <img className="examples-photo" src={imgQuiz} alt="quiz" />
-                </a>
-                <div className="examples-des">
-                    <h1>QUIZ</h1>
-                    <h2>App in which we can test our knowledge in five categories: technology, culture, automotive, programming and history. </h2>
-                </div>
-                <a className='git-button' href='https://github.com/Fuzyn/Quiz'>Git Code</a>
-            </div>
-            <div className="examples-main" data-aos="zoom-in-left">
-                <a href='https://kanban-wierzbicki.netlify.app/'>
-                    <img className="examples-photo" src={imgKanban} alt="kanban" />
-                </a>
-                <div className="examples-des">
-                    <h1>Kanban Board</h1>
-                    <h2>A board designed to organize tasks. It allows you to add and edit cards and tasks, with implemented DnD function.</h2>
-                </div>
-                <a className='git-button' href='https://github.com/Fuzyn/Kanban'>Git Code</a>
-            </div>
-            <div className="examples-main" data-aos="zoom-in-left">
-                <a href='https://letter-wierzbicki.netlify.app/'>
-                    <img src={imgLetter} className="examples-photo" alt="kanban" />
-                </a>
-                <div className="examples-des">
-                    <h1>Letter</h1>
-                    <h2>Game inspired by Wordle (English version) or Literalnie (Polish version). Guess the word without any hints in a maximum of 5 tries.</h2>
-                </div>
-                <a className='git-button' href='https://github.com/Fuzyn/Letter'>Git Code</a>
-            </div>
-            <div className="examples-main" data-aos="zoom-in-left">
-                <a href='https://fuzgamela-wierzbicki.netlify.app/'>
-                    <img src={imgFuzgamela} className="examples-photo" alt="kanban" />
-                </a>
-                <div className="examples-des">
-                    <h1>FuzGamela (not complete)</h1>
-                    <h2>Browser game</h2>
-                </div>
-                <a className='git-button' href='https://github.com/Fuzyn/FuzGamela'>Git Code</a>
-            </div>
+            <Example
+                appLink='https://firstpage-wierzbicki.netlify.app/'
+                gitLink='https://github.com/Fuzyn/FirstPage'
+                srcImg={fiImgPage}
+                altImg='my-first-page'
+                title='Simple website'
+                description='This is my first website, write in HTML and CSS'
+            />
+            <Example
+                appLink='https://quizapp-wierzbicki.netlify.app/'
+                gitLink='https://github.com/Fuzyn/Quiz'
+                srcImg={imgQuiz}
+                altImg='quiz'
+                title='QUIZ'
+                description='App in which we can test our knowledge in five categories: technology, culture, automotive, programming and history.'
+            />
+            <Example
+                appLink='https://kanban-wierzbicki.netlify.app/'
+                gitLink='https://github.com/Fuzyn/Kanban'
+                srcImg={imgKanban}
+                altImg='kanban'
+                title='Kanban Board'
+                description='A board designed to organize tasks. It allows you to add and edit cards and tasks, with implemented DnD function.'
+            />
+            <Example
+                appLink='https://letter-wierzbicki.netlify.app/'
+                gitLink='https://github.com/Fuzyn/Letter'
+                srcImg={imgLetter}
+                altImg='letter'
+                title='Letter'
+                description='Game inspired by Wordle (English version) or Literalnie (Polish version). Guess the word without any hints in a maximum of 5 tries..'
+            />
+            <Example
+                appLink='https://fuzgamela-wierzbicki.netlify.app/'
+                gitLink='https://github.com/Fuzyn/FuzGamela'
+                srcImg={imgFuzgamela}
+                altImg='fuzgamela'
+                title='FuzGamela (not complete)'
+                description='Browser game'
+            />
             <div className='contact'>
                 <h1>If you are interested what you see, please don't hesitate!</h1>
                 <div className='contact_field'>
-                    <h1><a href='mailto: michalwierzbicki.miw@gmail.com'>michalwierzbicki.miw@gmail.com</a></h1>
+                    <h1><a href='mailto: michalwierzbicki22@interia.eu'>michalwierzbicki22@interia.eu</a></h1>
                 </div>
             </div>
         </div>

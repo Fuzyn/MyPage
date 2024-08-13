@@ -1,6 +1,6 @@
 import Lightbox from 'react-image-lightbox';
 import { useState } from 'react';
-import {imgAsg, imgDron, imgTravel} from './galleryImport'
+import {imgAsg, imgDron, imgTravel} from './GalleryImport'
 import 'react-image-lightbox/style.css';
 
 const Gallery = () => {
