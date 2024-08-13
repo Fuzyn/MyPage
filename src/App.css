@@ -51,7 +51,6 @@ BODY {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
   height: 100vh;
 }
 .hello-text {
@@ -59,32 +58,27 @@ BODY {
   flex-direction: column;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 1vw;
+  border-radius: 30px;
   color: #fff;
-  padding: 1vw;
-  width: 80%;
-}
-
-.hello-text a {
-  width: 17%;
+  padding: 20px;
+  margin: 20px;
+  max-width: 700px;
 }
 
 .hello-text>h1 {
-  margin: 0.5vw;
-
+  margin: 5px;
 }
 
 .hiText-Hi {
-  font-size: 4vw;
   text-shadow: 10px 10px #000;
 }
 
 .hiText-rest {
-  font-size: 2vw;
+  font-size: 18px;
 }
 
 .button_hello_div {
-  width: 15%;
+  width: 100px;
 }
 
 .button_hello {
@@ -459,13 +453,6 @@ BODY {
 }
 
 @media only screen and (max-width: 600px) {
-  .hello-text {
-    margin-bottom: 30%;
-  }
-
-  .hello-text a {
-    width: 22%;
-  }
 
   .button_hello {
     margin-top: 1vh;
