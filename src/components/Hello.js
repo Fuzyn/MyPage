@@ -1,5 +1,4 @@
-import arrow from '../assets/arrow.png';
-import {Card, CardActions, CardContent, Grid, Paper, Typography} from "@mui/material";
+import {Card, CardActions, CardContent, Grid, Typography} from "@mui/material";
 import {LoadingButton} from "@mui/lab";
 import {ArrowRightAltOutlined} from "@mui/icons-material";
 
