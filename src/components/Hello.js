@@ -6,6 +6,7 @@ import {ArrowRightAltOutlined} from "@mui/icons-material";
 
 const Hello = (props) => {
     return <Grid minHeight="100vh" alignContent="center">
+
         <Card variant="outlined" sx={{backgroundColor: "rgba(0,0,0,0.4)", color: "white"}}>
             <CardContent>
                 <Typography variant="h1" textAlign="center" sx={{textShadow: "7px 7px #000"}}>Hi!</Typography>
