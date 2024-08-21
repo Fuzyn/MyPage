@@ -2,12 +2,6 @@ import {Card, CardActions, CardContent, Grid, Typography} from "@mui/material";
 import {LoadingButton} from "@mui/lab";
 import {ArrowRightAltOutlined} from "@mui/icons-material";
 
-
-
-
-
-
-
 const Hello = (props) => {
     return <Grid minHeight="100vh" alignContent="center">
         <Card variant="outlined" sx={{backgroundColor: "rgba(0,0,0,0.4)", color: "white"}}>
