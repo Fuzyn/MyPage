@@ -20,7 +20,7 @@ const Hello = (props) => {
                 setTimeout(() => props.showPortfolio(), 300)
             }
         }
-    }, [fakeProgress])
+    }, [fakeProgress, props])
 
     return <Grid minHeight="100vh" alignContent="center">
         <Card variant="outlined" sx={{backgroundColor: "rgba(0,0,0,0.4)", color: "white"}}>
