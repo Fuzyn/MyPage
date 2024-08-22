@@ -1,0 +1,39 @@
+#hello-page {
+  position: relative;
+}
+
+#hello-page .hello-card-show {
+  position: absolute;
+  top: -400px;
+  width: -webkit-fill-available;
+  -webkit-animation: slide-to-show 1s forwards;
+  -webkit-animation-delay: 0.2s;
+  animation: slide-to-show 1s forwards;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes slide-to-show {
+  100% { top: 30vh; }
+}
+
+@keyframes slide-to-show {
+  100% { top: 30vh; }
+}
+
+#hello-page .hello-card-hide {
+  position: absolute;
+  top: 30vh;
+  width: -webkit-fill-available;
+  -webkit-animation: slide-to-hide 1s forwards;
+  -webkit-animation-delay: 0.2s;
+  animation: slide-to-hide 1s forwards;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes slide-to-hide {
+  100% { top: 105vh; }
+}
+
+@keyframes slide-to-hide {
+  100% { top: 105vh; }
+}

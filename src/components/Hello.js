@@ -1,7 +1,8 @@
 import {Card, CardActions, CardContent, Grid, LinearProgress, Typography} from "@mui/material";
 import {LoadingButton} from "@mui/lab";
-import {ArrowRightAltOutlined} from "@mui/icons-material";
+import {ArrowRightOutlined} from "@mui/icons-material";
 import {useEffect, useState} from "react";
+import "./Hello.css"
 
 const Hello = (props) => {
     const [fakeProgress, setFakeProgress] = useState(0)
@@ -17,15 +18,15 @@ const Hello = (props) => {
 
                 return () => clearInterval(timerId);
             } else {
-                setTimeout(() => props.showPortfolio(), 300)
+                setTimeout(() => props.showPortfolio(), 1000)
             }
         }
     }, [fakeProgress, props])
 
-    return <Grid minHeight="100vh" alignContent="center">
-        <Card variant="outlined" sx={{backgroundColor: "rgba(0,0,0,0.4)", color: "white"}}>
+    return <Grid id="hello-page" minHeight="100vh">
+        <Card className={`hello-card-${fakeProgress < 100 ? 'show' : 'hide'}`} variant="outlined" sx={{backgroundColor: "rgba(0,0,0,0.4)", color: "white"}}>
             <CardContent>
-                <Typography variant="h1" textAlign="center" sx={{textShadow: "7px 7px #000"}}>Hi!</Typography>
+                <Typography variant="h1" textAlign="center" fontWeight="bold" sx={{textShadow: "7px 7px #000"}}>Hi!</Typography>
                 <Typography variant="subtitle1" textAlign="center">My name is Michał Wierzbicki</Typography>
                 <Typography variant="subtitle1" textAlign="center">Click on the button below to view my CV and portfolio</Typography>
             </CardContent>
@@ -36,7 +37,7 @@ const Hello = (props) => {
                     onClick={() => loadResume()}
                     loading={fakeProgress > 0}
                 >
-                    <ArrowRightAltOutlined/>
+                    <ArrowRightOutlined fontSize="large"/>
                 </LoadingButton>
             </CardActions>
             {fakeProgress > 0 && <LinearProgress variant="determinate" value={fakeProgress}/>}

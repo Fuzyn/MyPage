@@ -6,7 +6,7 @@ BODY {
   background-position: center;
 }
 
-.exampless {
+.examples {
   position: relative;
   z-index: 1;
   background: #fff;
@@ -14,12 +14,11 @@ BODY {
   padding: 10px 10px 10px 15px;
   margin: 0 0 10px 0;
   overflow: auto;
-  border: 1px solid #e5e5df;
   border-radius: 3px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 }
 
-.exampless.open {
+.examples .open {
   position: fixed;
   width: 80%;
   height: 80%;
@@ -43,80 +42,6 @@ BODY {
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
-
-/*                                                 Styles for Hello */
-
-.hello-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-.hello-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 30px;
-  color: #fff;
-  padding: 20px;
-  margin: 20px;
-  max-width: 700px;
-}
-
-.hello-text>h1 {
-  margin: 5px;
-}
-
-.hiText-Hi {
-  font-size: 50px;
-  text-shadow: 10px 10px #000;
-}
-
-.hiText-rest {
-  font-size: 25px;
-  text-align: center;
-}
-
-.button_hello_div {
-  width: 100px;
-}
-
-.button_hello {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  background-color: rgba(243, 226, 55, 0.6);
-  width: 100%;
-  font-size: 2vw;
-  padding: 0.5vw;
-  border-radius: 1vw;
-}
-
-.button_hello:hover {
-  cursor: pointer;
-  animation: arrow 2s infinite;
-}
-
-.arrow {
-  height: 30px;
-  width: 20px;
-}
-
-@keyframes arrow {
-  0% {
-    justify-content: end;
-    padding-right: 60%;
-  }
-
-  100% {
-    justify-content: end;
-    padding-right: 5%;
-  }
-}
-
-
 
 /*                                                 Styles for Portfolio */
 
@@ -473,14 +398,6 @@ BODY {
   .arrow {
     height: auto;
     width: 2vw;
-  }
-
-  .hiText-Hi {
-    font-size: 9vw;
-  }
-
-  .hiText-rest {
-    font-size: 3.5vw;
   }
 
   .mainPort {
