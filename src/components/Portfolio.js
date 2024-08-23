@@ -1,16 +1,16 @@
 import myPhoto from '../assets/myphoto.jpg';
 import AOS from 'aos';
-import Gallery from './Gallery/Gallery';
-import { skillsImg, skillsDescription } from './skills';
-import fiImgPage from '../assets/firstproject.jpg';
-import imgQuiz from '../assets/quiz.jpg';
-import imgKanban from '../assets/kanban.jpg';
-import imgLetter from '../assets/letter.jpg';
-import imgFuzgamela from '../assets/fuzgamela.jpg';
-import ticTacToe from '../assets/tic-tac-toe.png'
-import videoPoster from '../assets/videoPoster.png';
-import videoSrc from '../assets/cv.mp4';
-import Example from "./PotfrolioPages/Example";
+// import Gallery from './Gallery/Gallery';
+// import { skillsImg, skillsDescription } from './skills';
+// import fiImgPage from '../assets/firstproject.jpg';
+// import imgQuiz from '../assets/quiz.jpg';
+// import imgKanban from '../assets/kanban.jpg';
+// import imgLetter from '../assets/letter.jpg';
+// import imgFuzgamela from '../assets/fuzgamela.jpg';
+// import ticTacToe from '../assets/tic-tac-toe.png'
+// import videoPoster from '../assets/videoPoster.png';
+// import videoSrc from '../assets/cv.mp4';
+// import Example from "./PotfrolioPages/Example";
 import github from '../assets/skills/github.png';
 import {Box, Grid, Typography} from "@mui/material";
 import "./Portfolio.css"
