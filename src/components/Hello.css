@@ -12,14 +12,6 @@
   animation-delay: 0.2s;
 }
 
-@-webkit-keyframes slide-to-show {
-  100% { top: 30vh; }
-}
-
-@keyframes slide-to-show {
-  100% { top: 30vh; }
-}
-
 #hello-page .hello-card-hide {
   position: absolute;
   top: 30vh;
@@ -28,6 +20,14 @@
   -webkit-animation-delay: 0.2s;
   animation: slide-to-hide 1s forwards;
   animation-delay: 0.2s;
+}
+
+@-webkit-keyframes slide-to-show {
+  100% { top: 30vh; }
+}
+
+@keyframes slide-to-show {
+  100% { top: 30vh; }
 }
 
 @-webkit-keyframes slide-to-hide {
