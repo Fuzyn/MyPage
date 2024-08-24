@@ -4,12 +4,12 @@ import {Grid, Typography} from "@mui/material";
 
 const Example = ({appLink, gitLink, srcImg, altImg, title, description}) => {
     return <Grid container padding="20px">
-        <Grid item xs={5}>
+        <Grid item md={5} xs={12}>
             <a href={appLink}>
                 <img src={srcImg} className="examples-photo" alt={altImg} />
             </a>
         </Grid>
-        <Grid item xs={7}>
+        <Grid item md={7} xs={12}>
             <Typography variant="h5">{title}</Typography>
             <Typography variant="h7">{description}</Typography>
         </Grid>
