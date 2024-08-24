@@ -3,7 +3,7 @@ import github from "../../assets/skills/github.png";
 import {Grid, Typography} from "@mui/material";
 
 const Example = ({appLink, gitLink, srcImg, altImg, title, description}) => {
-    return <Grid container data-aos="fade-left" padding="20px">
+    return <Grid container padding="20px">
         <Grid item xs={5}>
             <a href={appLink}>
                 <img src={srcImg} className="examples-photo" alt={altImg} />

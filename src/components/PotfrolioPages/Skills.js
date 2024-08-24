@@ -4,24 +4,24 @@ import {Grid, List, ListItem, ListItemText, Typography} from "@mui/material";
 const Skills = () => {
     return <Grid className="portfolio-page-wrapper">
         <List sx={{ listStyle: "circle", marginLeft: "30px" }}>
-            <ListItem data-aos="fade-left">
+            <ListItem>
                 <ListItemText>
                     <Typography variant="h3">Skills and achievements</Typography>
                 </ListItemText>
             </ListItem>
-            <ListItem sx={{ display: "list-item" }} data-aos="fade-left" data-aos-delay={300}>
+            <ListItem sx={{ display: "list-item" }}>
                 <ListItemText primary="English B2 level" />
             </ListItem>
-            <ListItem sx={{ display: "list-item" }} data-aos="fade-left" data-aos-delay={400}>
+            <ListItem sx={{ display: "list-item" }}>
                 <ListItemText primary="Category B driving license" />
             </ListItem>
-            <ListItem sx={{ display: "list-item" }} data-aos="fade-left" data-aos-delay={500}>
+            <ListItem sx={{ display: "list-item" }}>
                 <ListItemText primary="Ability to organize work independently, solve problems and think analytically" />
             </ListItem>
-            <ListItem sx={{ display: "list-item" }} data-aos="fade-left" data-aos-delay={600}>
+            <ListItem sx={{ display: "list-item" }}>
                 <ListItemText primary="Work ethic, the ability to count quickly and work under pressure" />
             </ListItem>
-            <ListItem sx={{ display: "list-item" }} data-aos="fade-left" data-aos-delay={700}>
+            <ListItem sx={{ display: "list-item" }}>
                 <ListItemText primary="Knowledge of the programs:  Statistica, CorelDRAW, GIMP, Visual Studio Code." />
             </ListItem>
         </List>
