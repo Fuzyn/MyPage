@@ -16,8 +16,8 @@
     overflow: auto;
     position: relative;
     right: 50vw;
-    -webkit-animation: slide-to-show 0.5s forwards;
-    animation: slide-to-show 0.5s forwards;
+    -webkit-animation: slide-to-show-right 0.5s forwards;
+    animation: slide-to-show-right 0.5s forwards;
 }
 
 #portfolio-page .portfolio-page-wrapper {
@@ -46,11 +46,11 @@
     filter: invert();
 }
 
-@-webkit-keyframes slide-to-show {
+@-webkit-keyframes slide-to-show-right {
     100% { right: 0; }
 }
 
-@keyframes slide-to-show {
+@keyframes slide-to-show-right {
     100% { right: 0; }
 }
 
