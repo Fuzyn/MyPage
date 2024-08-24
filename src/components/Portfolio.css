@@ -2,6 +2,7 @@
     color: white;
     background-color: rgba(0,0,0,0.7);
     position: relative;
+    overflow: hidden;
 }
 
 #portfolio-page .desktop-person-description {
@@ -13,11 +14,9 @@
     padding: 20px 50px 0 ;
     overflow: auto;
     position: relative;
-    right: 100vw;
-    -webkit-animation: slide-to-show 1s forwards;
-    -webkit-animation-delay: 0.2s;
-    animation: slide-to-show 1s forwards;
-    animation-delay: 0.2s;
+    right: 50vw;
+    -webkit-animation: slide-to-show 0.5s forwards;
+    animation: slide-to-show 0.5s forwards;
 }
 
 #portfolio-page .portfolio-page-wrapper {
@@ -27,6 +26,12 @@
     text-align: justify;
     overflow-y: scroll;
     overflow-x: hidden;
+    position: relative;
+    left: 100vw;
+    -webkit-animation: slide-to-show-left 1s forwards;
+    -webkit-animation-delay: 0.2s;
+    animation: slide-to-show-left 1s forwards;
+    animation-delay: 0.2s;
 }
 
 #portfolio-page .desktop-person-description .description-git {
@@ -46,4 +51,12 @@
 
 @keyframes slide-to-show {
     100% { right: 0; }
+}
+
+@-webkit-keyframes slide-to-show-left {
+    100% { left: 0; }
+}
+
+@keyframes slide-to-show-left {
+    100% { left: 0; }
 }
