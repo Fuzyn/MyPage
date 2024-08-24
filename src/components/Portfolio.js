@@ -34,7 +34,7 @@ const Portfolio = () => {
     const [portfolioPage, setPortfolioPage] = useState("experience")
 
     return <Grid container spacing={3} id="portfolio-page">
-        <Grid item md={4} sm={0} className="desktop-person-description" data-aos="fade-right">
+        <Grid item md={4} sm={0} className="desktop-person-description">
             <Box sx={{display: {xs: "none", sm: "none", md: "block"}}}>
                 <Box
                     component="img"
