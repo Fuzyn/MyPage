@@ -20,6 +20,15 @@ import Experience from "./PotfrolioPages/Experience";
 import {useState} from "react";
 import Skills from "./PotfrolioPages/Skills";
 import Examples from "./PotfrolioPages/Examples";
+import HTMLIcon from "./Technologies/HTMLIcon";
+import CSSIcon from "./Technologies/CSSIcon";
+import JSIcon from "./Technologies/JSIcon";
+import ReactIcon from "./Technologies/ReactIcon";
+import SASSIcon from "./Technologies/SASSIcon";
+import BitBucketIcon from "./Technologies/BitBucketIcon";
+import VSCIcon from "./Technologies/VSCIcon";
+import ObjectProgramingIcon from "./Technologies/ObjectProgramingIcon";
+import ResponsiveIcon from "./Technologies/ResponsiveIcon";
 
 const Portfolio = () => {
 
@@ -50,6 +59,17 @@ const Portfolio = () => {
                 <Typography variant="h7">After over two years of programming, I expanded my knowledge of backend languages and databases such as: <b>Ruby on Rails, PostgreSQL</b></Typography>
                 <hr />
                 <Typography variant="h7">Below I will present the technologies I know:</Typography>
+                <Grid container spacing={2} alignItems="center" justifyContent="center">
+                    <Grid item><HTMLIcon/></Grid>
+                    <Grid item><CSSIcon/></Grid>
+                    <Grid item><JSIcon/></Grid>
+                    <Grid item><ReactIcon/></Grid>
+                    <Grid item><SASSIcon/></Grid>
+                    <Grid item><BitBucketIcon/></Grid>
+                    <Grid item><VSCIcon/></Grid>
+                    <Grid item><ObjectProgramingIcon/></Grid>
+                    <Grid item><ResponsiveIcon/></Grid>
+                </Grid>
             </Box>
         </Grid>
         <Grid item md={1} sm={1} xs={1} data-aos="zoom-in">
