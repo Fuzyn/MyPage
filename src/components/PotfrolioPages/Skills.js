@@ -13,6 +13,15 @@ const Skills = () => {
                 <ListItemText primary="English B2 level" />
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
+                <ListItemText primary="Front-End Technologies: JS, React, Redux, Bootstrap, Bootstrap Table, Material UI, Babel" />
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+                <ListItemText primary="Back-End Technologies: Ruby on Rails, PostgreSQL" />
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
+                <ListItemText primary="External API: Stripe, Quickbooks, Google" />
+            </ListItem>
+            <ListItem sx={{ display: "list-item" }}>
                 <ListItemText primary="Category B driving license" />
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
