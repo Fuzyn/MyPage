@@ -11,11 +11,11 @@ import AOS from 'aos';
 // import videoPoster from '../assets/videoPoster.png';
 // import videoSrc from '../assets/cv.mp4';
 // import Example from "./PotfrolioPages/Example";
-import github from '../assets/skills/github.png';
+// import github from '../assets/skills/github.png';
 import {Box, Grid, Typography} from "@mui/material";
 import "./Portfolio.css"
 import {Timeline, TimelineConnector, TimelineDot, TimelineItem, TimelineSeparator} from "@mui/lab";
-import {ConstructionOutlined, LaptopMac, TerminalOutlined} from "@mui/icons-material";
+import {ConstructionOutlined, GitHub, LaptopMac, TerminalOutlined} from "@mui/icons-material";
 import Experience from "./PotfrolioPages/Experience";
 import {useState} from "react";
 import Skills from "./PotfrolioPages/Skills";
@@ -42,7 +42,7 @@ const Portfolio = () => {
                     alt="my_photo"
                     src={myPhoto}
                 />
-                <a href='https://github.com/Fuzyn/MyPage' className='description-git'><img alt='git-logo' src={github} /></a>
+                <a href='https://github.com/Fuzyn/MyPage' className='description-git'><GitHub fontSize="large"/></a>
                 <Typography variant="h4" textAlign="center">About me:</Typography>
                 <Typography variant="h7">I have been a Full-Stack developer for over two years. I specialize in languages such as: <b>Java Script, React, Ruby on Rails, PostgreSQL</b>, etc. I also a mining geologist by education and experience with mining qualifications.</Typography>
                 <hr />

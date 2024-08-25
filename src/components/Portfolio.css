@@ -38,12 +38,16 @@
 #portfolio-page .desktop-person-description .description-git {
     position: absolute;
     bottom: 0;
-    right: 5px
+    right: 5px;
+    color: white;
 }
 
 #portfolio-page .desktop-person-description .description-git img {
     width: 50px;
-    filter: invert();
+}
+
+.skill-icon {
+    height: 30px;
 }
 
 @-webkit-keyframes slide-to-show-right {

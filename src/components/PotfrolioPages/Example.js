@@ -1,6 +1,6 @@
 import React from "react";
-import github from "../../assets/skills/github.png";
 import {Grid, Typography} from "@mui/material";
+import {GitHub} from "@mui/icons-material";
 
 const Example = ({appLink, gitLink, srcImg, altImg, title, description}) => {
     return <Grid container padding="20px">
@@ -13,7 +13,7 @@ const Example = ({appLink, gitLink, srcImg, altImg, title, description}) => {
             <Typography variant="h5">{title}</Typography>
             <Typography variant="h7">{description}</Typography>
         </Grid>
-        <Grid xs={12} display="flex" justifyContent="flex-end"><a className='git-button' href={gitLink}>Git Code<img alt='git-logo' src={github} /></a></Grid>
+        <Grid xs={12} display="flex" justifyContent="flex-end"><a className='git-button' href={gitLink}>Git Code<GitHub/></a></Grid>
     </Grid>
 }
 
