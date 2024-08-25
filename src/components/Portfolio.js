@@ -40,7 +40,7 @@ const Portfolio = () => {
             portfolioPage={portfolioPage}
             setPortfolioPage={setPortfolioPage}
         />
-        <Grid item md={7} sm={9} xs={8} height="100%" overflow="auto">
+        <Grid item md={7} sm={9} xs={8} sx={{overflowX: 'hidden', overflowY: 'scroll', height: '100%'}}>
             {portfolioPage === "experience" && <Experience/>}
             {portfolioPage === "skills" && <Skills/>}
             {portfolioPage === "examples" && <Examples/>}
