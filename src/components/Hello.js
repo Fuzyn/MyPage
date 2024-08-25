@@ -27,8 +27,8 @@ const Hello = (props) => {
         <Card className={`hello-card-${fakeProgress < 100 ? 'show' : 'hide'}`} variant="outlined" sx={{backgroundColor: "rgba(0,0,0,0.4)", color: "white"}}>
             <CardContent>
                 <Typography variant="h1" textAlign="center" fontWeight="bold" sx={{textShadow: "7px 7px #000"}}>Hi!</Typography>
-                <Typography variant="subtitle1" textAlign="center">My name is Michał Wierzbicki</Typography>
-                <Typography variant="subtitle1" textAlign="center">Click on the button below to view my CV and portfolio</Typography>
+                <Typography variant="h5" textAlign="center">I'm Michał</Typography>
+                <Typography variant="h5" textAlign="center">Click and see my CV and portfolio</Typography>
             </CardContent>
             <CardActions sx={{justifyContent: "center"}}>
                 <LoadingButton
