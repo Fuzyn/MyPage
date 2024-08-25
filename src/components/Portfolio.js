@@ -44,12 +44,12 @@ const Portfolio = () => {
                 />
                 <a href='https://github.com/Fuzyn/MyPage' className='description-git'><img alt='git-logo' src={github} /></a>
                 <Typography variant="h4" textAlign="center">About me:</Typography>
-                <Typography variant="h7">I am a mining geologist by education and experience, I also have mining qualifications.</Typography>
+                <Typography variant="h7">I have been a Full-Stack developer for over two years. I specialize in languages such as: <b>Java Script, React, Ruby on Rails, PostgreSQL</b>, etc. I also a mining geologist by education and experience with mining qualifications.</Typography>
                 <hr />
-                <Typography variant="h7">I started programming in 2020. At the beginning, I learned HTML and CSS from books and intenret. Then I joined a course where I broadened my knowledge of HTML and CSS and also learned JavaScript, React and SCSS. After that, I started creating applications by myself. I just...  I hooked in this!</Typography>
+                <Typography variant="h7">I started programming in 2020. At the beginning, I learned <b>HTML, CSS, JavaScript, React and SCSS</b>. After that, I started creating applications by myself. I just...  I hooked in this!</Typography>
+                <Typography variant="h7">After over two years of programming, I expanded my knowledge of backend languages and databases such as: <b>Ruby on Rails, PostgreSQL</b></Typography>
                 <hr />
-                <Typography variant="h7">Below I will present you a few project:</Typography>
-                {/*<a href='#portfolio' className='desAnchor' >▾</a>*/}
+                <Typography variant="h7">Below I will present the technologies I know:</Typography>
             </Box>
         </Grid>
         <Grid item md={1} sm={1} xs={1} data-aos="zoom-in">
