@@ -1,12 +1,29 @@
 import React from "react";
-import {Timeline, TimelineConnector, TimelineDot, TimelineItem, TimelineSeparator} from "@mui/lab";
-import {ConstructionOutlined, LaptopMac, TerminalOutlined} from "@mui/icons-material";
+import {
+    Timeline,
+    TimelineConnector,
+    TimelineDot,
+    TimelineItem,
+    TimelineOppositeContent,
+    TimelineSeparator
+} from "@mui/lab";
+import {ConstructionOutlined, EmojiPeopleOutlined, LaptopMac, TerminalOutlined} from "@mui/icons-material";
 import {Grid} from "@mui/material";
 
 const PageTimeline = ({portfolioPage, setPortfolioPage}) => {
     return <Grid item md={1} sm={1} xs={1} data-aos="zoom-in">
         <Timeline position="left" sx={{height: "100vh", margin: 0, padding: 0}}>
-            <TimelineItem sx={{height: "33.3%"}}>
+            <TimelineItem sx={{height: {xs: "25%", sm: "25%"}, display: {xs: "flex", sm: "flex", md: "none"}, justifyContent: "flex-end"}}>
+                <TimelineSeparator>
+                    <TimelineConnector/>
+                    <TimelineDot color={portfolioPage === "about" ? "primary" : "grey"}>
+                        <EmojiPeopleOutlined cursor="pointer" onClick={() => setPortfolioPage("about")}/>
+                    </TimelineDot>
+                    <TimelineConnector/>
+                </TimelineSeparator>
+                <TimelineOppositeContent sx={{display: "none"}}/>
+            </TimelineItem>
+            <TimelineItem sx={{height: {xs: "25%", sm: "25%", md: "33.3%"}, justifyContent: "flex-end"}}>
                 <TimelineSeparator>
                     <TimelineConnector/>
                     <TimelineDot color={portfolioPage === "experience" ? "primary" : "grey"}>
@@ -14,8 +31,9 @@ const PageTimeline = ({portfolioPage, setPortfolioPage}) => {
                     </TimelineDot>
                     <TimelineConnector/>
                 </TimelineSeparator>
+                <TimelineOppositeContent sx={{display: "none"}}/>
             </TimelineItem>
-            <TimelineItem sx={{height: "33.3%"}}>
+            <TimelineItem sx={{height: {xs: "25%", sm: "25%", md: "33.3%"}, justifyContent: "flex-end"}}>
                 <TimelineSeparator>
                     <TimelineConnector/>
                     <TimelineDot color={portfolioPage === "skills" ? "primary" : "grey"}>
@@ -23,8 +41,9 @@ const PageTimeline = ({portfolioPage, setPortfolioPage}) => {
                     </TimelineDot>
                     <TimelineConnector/>
                 </TimelineSeparator>
+                <TimelineOppositeContent sx={{display: "none"}}/>
             </TimelineItem>
-            <TimelineItem sx={{height: "33.3%"}}>
+            <TimelineItem sx={{height: {xs: "25%", sm: "25%", md: "33.3%"}, justifyContent: "flex-end"}}>
                 <TimelineSeparator>
                     <TimelineConnector/>
                     <TimelineDot color={portfolioPage === "examples" ? "primary" : "grey"}>
@@ -32,6 +51,7 @@ const PageTimeline = ({portfolioPage, setPortfolioPage}) => {
                     </TimelineDot>
                     <TimelineConnector/>
                 </TimelineSeparator>
+                <TimelineOppositeContent sx={{display: "none"}}/>
             </TimelineItem>
         </Timeline>
     </Grid>

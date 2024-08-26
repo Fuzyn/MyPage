@@ -14,7 +14,7 @@ import AOS from 'aos';
 import {Grid} from "@mui/material";
 import "./Portfolio.css"
 import Experience from "./PotfrolioPages/Experience";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Skills from "./PotfrolioPages/Skills";
 import Examples from "./PotfrolioPages/Examples";
 import About from "./PotfrolioPages/About";
@@ -30,17 +30,36 @@ const Portfolio = () => {
         offset: 200,
     });
 
-    const [portfolioPage, setPortfolioPage] = useState("experience")
+    const [portfolioPage, setPortfolioPage] = useState(window.innerWidth > 900 ? "experience" : "about")
+
+    const getWindowDimensions = () => {
+        const { innerWidth: width, innerHeight: height } = window;
+        return {width, height};
+    }
+
+    const handleResize = () => {
+        const width = getWindowDimensions().width
+
+        if (width > 900 && portfolioPage === "about") {
+            setPortfolioPage("experience")
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, [portfolioPage])
 
     return <Grid container spacing={3} id="portfolio-page">
         <About
-            sx={{display: {xs: "none", sm: "none", md: "block"}}}
+            sx={{display: {xs: "none", sm: "none", md: "flex"}}}
         />
         <PageTimeline
             portfolioPage={portfolioPage}
             setPortfolioPage={setPortfolioPage}
         />
-        <Grid item md={7} sm={9} xs={8} sx={{overflowX: 'hidden', overflowY: 'scroll', height: '100%', display: 'flex'}}>
+        <Grid item md={7} sm={10} xs={10} sx={{overflowX: 'hidden', overflowY: 'scroll', height: '100%', display: 'flex', alignItems: "center"}}>
+            {portfolioPage === "about" && <About sx={{display: {xs: "flex", sm: "flex", md: "none"}, padding: "0 !important"}}/>}
             {portfolioPage === "experience" && <Experience/>}
             {portfolioPage === "skills" && <Skills/>}
             {portfolioPage === "examples" && <Examples/>}

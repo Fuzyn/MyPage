@@ -8,7 +8,6 @@
 }
 
 #portfolio-page .desktop-person-description {
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,11 +21,12 @@
 }
 
 #portfolio-page .portfolio-page-wrapper {
-    align-content: center;
     padding: 0 40px 0 0;
     text-align: justify;
     position: relative;
     left: 100vw;
+    max-height: -webkit-fill-available;
+    overflow: scroll;
     -webkit-animation: slide-to-show-left 1s forwards;
     -webkit-animation-delay: 0.2s;
     animation: slide-to-show-left 1s forwards;
@@ -35,7 +35,7 @@
 
 #portfolio-page .desktop-person-description .description-git {
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     right: 5px;
     color: white;
 }
@@ -62,4 +62,17 @@
 
 @keyframes slide-to-show-left {
     100% { left: 0; }
+}
+
+@media screen and (max-width: 900px) {
+    #portfolio-page .desktop-person-description {
+        padding: 10px;
+        left: 50vw;
+        -webkit-animation: slide-to-show-left 0.5s forwards;
+        animation: slide-to-show-left 0.5s forwards;
+    }
+
+    #portfolio-page .portfolio-page-wrapper {
+        padding: 10px;
+    }
 }
