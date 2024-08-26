@@ -9,7 +9,7 @@ import imgFuzgamela from '../../assets/fuzgamela.jpg';
 import ticTacToe from '../../assets/tic-tac-toe.png'
 
 const Examples = () => {
-    return <Grid className="portfolio-page-wrapper">
+    return <Grid className="portfolio-page-wrapper" flexDirection="column">
             <Example
                 appLink='https://firstpage-wierzbicki.netlify.app/'
                 gitLink='https://github.com/Fuzyn/FirstPage'

@@ -14,10 +14,10 @@ import ResponsiveIcon from "../Technologies/ResponsiveIcon";
 
 const About = ({sx}) => {
     return <Grid item md={4} className="desktop-person-description">
-        <Box sx={{...sx, flexDirection: "column", justifyContent: "center"}} height="100%">
+        <Box sx={{...sx, width: "100%"}}>
             <Box
                 component="img"
-                sx={{maxWidth: "250px", margin: "0 auto", height: "300px"}}
+                sx={{maxWidth: "250px", margin: "0 auto", display: "block"}}
                 alt="my_photo"
                 src={myPhoto}
             />

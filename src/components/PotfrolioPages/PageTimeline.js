@@ -12,7 +12,7 @@ import {Grid} from "@mui/material";
 
 const PageTimeline = ({portfolioPage, setPortfolioPage}) => {
     return <Grid item md={1} sm={1} xs={1} data-aos="zoom-in">
-        <Timeline position="left" sx={{height: "100vh", margin: 0, padding: 0}}>
+        <Timeline position="left" sx={{height: "95vh", margin: 0, padding: 0}}>
             <TimelineItem sx={{height: {xs: "25%", sm: "25%"}, display: {xs: "flex", sm: "flex", md: "none"}, justifyContent: "flex-end"}}>
                 <TimelineSeparator>
                     <TimelineConnector/>

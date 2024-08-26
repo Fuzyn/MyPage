@@ -50,16 +50,16 @@ const Portfolio = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, [portfolioPage])
 
-    return <Grid container spacing={3} id="portfolio-page">
+    return <Grid container spacing={2} id="portfolio-page">
         <About
-            sx={{display: {xs: "none", sm: "none", md: "flex"}}}
+            sx={{display: {xs: "none", sm: "none", md: "block"}}}
         />
         <PageTimeline
             portfolioPage={portfolioPage}
             setPortfolioPage={setPortfolioPage}
         />
-        <Grid item md={7} sm={10} xs={10} sx={{overflowX: 'hidden', overflowY: 'scroll', height: '100%', display: 'flex', alignItems: "center"}}>
-            {portfolioPage === "about" && <About sx={{display: {xs: "flex", sm: "flex", md: "none"}, padding: "0 !important"}}/>}
+        <Grid item md={7} sm={10} xs={10} height="100vh">
+            {portfolioPage === "about" && <About sx={{display: {xs: "block", sm: "block", md: "none"}}}/>}
             {portfolioPage === "experience" && <Experience/>}
             {portfolioPage === "skills" && <Skills/>}
             {portfolioPage === "examples" && <Examples/>}
