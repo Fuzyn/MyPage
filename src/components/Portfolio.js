@@ -37,15 +37,15 @@ const Portfolio = () => {
         return {width, height};
     }
 
-    const handleResize = () => {
-        const width = getWindowDimensions().width
-
-        if (width > 900 && portfolioPage === "about") {
-            setPortfolioPage("experience")
-        }
-    }
-
     useEffect(() => {
+        const handleResize = () => {
+            const width = getWindowDimensions().width
+
+            if (width > 900 && portfolioPage === "about") {
+                setPortfolioPage("experience")
+            }
+        }
+
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, [portfolioPage])
