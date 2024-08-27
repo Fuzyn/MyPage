@@ -11,6 +11,8 @@ import BitBucketIcon from "../Technologies/BitBucketIcon";
 import VSCIcon from "../Technologies/VSCIcon";
 import ObjectProgramingIcon from "../Technologies/ObjectProgramingIcon";
 import ResponsiveIcon from "../Technologies/ResponsiveIcon";
+import PostgreSQLIcon from "../Technologies/PostgreSQLIcon";
+import RailsIcon from "../Technologies/RailsIcon";
 
 const About = ({sx}) => {
     return <Grid item md={4} className="desktop-person-description">
@@ -37,6 +39,8 @@ const About = ({sx}) => {
                 <Grid item><SASSIcon/></Grid>
                 <Grid item><BitBucketIcon/></Grid>
                 <Grid item><VSCIcon/></Grid>
+                <Grid item><PostgreSQLIcon/></Grid>
+                <Grid item><RailsIcon/></Grid>
                 <Grid item><ObjectProgramingIcon/></Grid>
                 <Grid item><ResponsiveIcon/></Grid>
             </Grid>
