@@ -16,6 +16,7 @@ import RailsIcon from "../Technologies/RailsIcon";
 import BootstrapIcon from "../Technologies/BootstrapIcon";
 import MaterialUIIcon from "../Technologies/MaterialUIIcon";
 import ReduxIcon from "../Technologies/ReduxIcon";
+import RubyMineIcon from "../Technologies/RubyMineIcon";
 
 const About = ({sx}) => {
     return <Grid item md={4} className="desktop-person-description">
@@ -47,6 +48,7 @@ const About = ({sx}) => {
                 <Grid item><BootstrapIcon/></Grid>
                 <Grid item><MaterialUIIcon/></Grid>
                 <Grid item><ReduxIcon/></Grid>
+                <Grid item><RubyMineIcon/></Grid>
                 <Grid item><ObjectProgramingIcon/></Grid>
                 <Grid item><ResponsiveIcon/></Grid>
             </Grid>
