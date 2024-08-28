@@ -14,6 +14,7 @@ import ResponsiveIcon from "../Technologies/ResponsiveIcon";
 import PostgreSQLIcon from "../Technologies/PostgreSQLIcon";
 import RailsIcon from "../Technologies/RailsIcon";
 import BootstrapIcon from "../Technologies/BootstrapIcon";
+import MaterialUIIcon from "../Technologies/MaterialUIIcon";
 
 const About = ({sx}) => {
     return <Grid item md={4} className="desktop-person-description">
@@ -43,6 +44,7 @@ const About = ({sx}) => {
                 <Grid item><PostgreSQLIcon/></Grid>
                 <Grid item><RailsIcon/></Grid>
                 <Grid item><BootstrapIcon/></Grid>
+                <Grid item><MaterialUIIcon/></Grid>
                 <Grid item><ObjectProgramingIcon/></Grid>
                 <Grid item><ResponsiveIcon/></Grid>
             </Grid>
