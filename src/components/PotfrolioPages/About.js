@@ -20,6 +20,7 @@ import RubyMineIcon from "../Technologies/RubyMineIcon";
 import GithubIcon from "../Technologies/GithubIcon";
 import GitIcon from "../Technologies/GitIcon";
 import GitLabIcon from "../Technologies/GitLabIcon";
+import RspecIcon from "../Technologies/RspecIcon";
 
 const About = ({sx}) => {
     return <Grid item md={4} className="desktop-person-description">
@@ -55,6 +56,7 @@ const About = ({sx}) => {
                 <Grid item><GitIcon/></Grid>
                 <Grid item><GithubIcon/></Grid>
                 <Grid item><GitLabIcon/></Grid>
+                <Grid item><RspecIcon/></Grid>
                 <Grid item><ObjectProgramingIcon/></Grid>
                 <Grid item><ResponsiveIcon/></Grid>
             </Grid>
